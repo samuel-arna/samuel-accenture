@@ -37,8 +37,7 @@ const UserSchema = mongoose.Schema({
   ultimo_login: {
     type: Date,
     default: Date.now,
-  },
-  token: String,
+  }
 });
 
 UserSchema.pre('save', async function salvar(next) {
